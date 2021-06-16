@@ -1,13 +1,3 @@
-# -*- coding: utf-8 -*-
-
-################################################################################
-## Form generated from reading UI file 'c++ class wizardVmgfxw.ui'
-##
-## Created by: Qt User Interface Compiler version 5.14.1
-##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
-
 import os
 from typing import List
 from PySide2.QtCore import (QCoreApplication, QMetaObject, QObject, QPoint,
@@ -450,7 +440,6 @@ class ClassCreator():
 
     def createConstructorImplementation(self)->str:
         outText = f"{self.name}::{self.linConstructor[1:-2]}"+"{\n"
-        #Vai ser implementado no futuro kkkk
         outText += "}\n\n\n"
         return outText
 
@@ -500,7 +489,6 @@ class SubClassCreator(ClassCreator):
             print(lin)
             outText += f"{lin.split()[1]},"
         outText = outText[:-1]+"){\n"
-        #Vai ser implementado no futuro kkkk
         outText += "}\n\n\n"
         return outText
 
